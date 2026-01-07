@@ -1,5 +1,9 @@
 # vis_tocspectrum
 
+![ARX39Ff_d](https://github.com/user-attachments/assets/78e84221-1e2c-441e-8e47-fb21bbd1096c)
+
+![ZehAKBQ_d](https://github.com/user-attachments/assets/7d153fb6-328e-4bb6-ab8b-c2465f01b15d)
+
 **ThisOldCPU’s OpenGL Spectrum Analyzer for Winamp 5+**
 
 A modern Winamp visualization plugin inspired by the clean, functional aesthetics of early 2000s spectrum analyzers with a visual direction loosely influenced by the iZotope Ozone 5 era.
@@ -23,17 +27,17 @@ This plugin is **not** a port of any existing visualization and does **not** reu
 
 This project intentionally follows a few hard rules:
 
-- **Winamp stays in control**
+- Winamp stays in control
   - No message-pumping in `Render`
   - No `Application.*` usage
   - No window reparenting hacks
-- **Explicit OpenGL state**
+- Explicit OpenGL state
   - Known-state rendering every frame
   - No reliance on undefined driver behavior
-- **Delphi-first**
+- Delphi-first
   - No C/C++ shims
   - No unnecessary SDK abstraction layers
-- **Readable over clever**
+- Readable over clever
   - Clear math
   - Predictable transforms
   - Debuggable visuals
@@ -41,6 +45,15 @@ This project intentionally follows a few hard rules:
 If you are looking for shader-heavy, modern-core OpenGL effects, this is **not** that project.
 
 ---
+
+
+
+
+
+
+
+
+
 
 ## Build Requirements
 
