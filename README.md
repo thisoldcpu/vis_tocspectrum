@@ -1,8 +1,15 @@
 # vis_tocspectrum
 
-![ARX39Ff_d](https://github.com/user-attachments/assets/78e84221-1e2c-441e-8e47-fb21bbd1096c)
+<img width="2560" height="1392" alt="Screenshot 2026-01-09 134052" src="https://github.com/user-attachments/assets/1da62d5f-e76d-48a6-aea7-8f8906e90899" />
 
-![ZehAKBQ_d](https://github.com/user-attachments/assets/7d153fb6-328e-4bb6-ab8b-c2465f01b15d)
+<img width="2560" height="1392" alt="Screenshot 2026-01-09 134100" src="https://github.com/user-attachments/assets/792f9ff9-eb32-48fe-83ca-0824cdaaadea" />
+
+<img width="2560" height="1392" alt="Screenshot 2026-01-09 134106" src="https://github.com/user-attachments/assets/f3fe3959-c2a5-4b0d-8201-89957a6968c4" />
+
+<img width="2560" height="1392" alt="Screenshot 2026-01-09 134125" src="https://github.com/user-attachments/assets/a4538d7b-bd8c-47f6-95d9-fe0486ea5133" />
+
+<img width="2560" height="1392" alt="Screenshot 2026-01-09 134232" src="https://github.com/user-attachments/assets/4c909e71-74a1-4fdc-9412-c526ca6a2275" />
+
 
 **ThisOldCPU’s OpenGL Spectrum Analyzer for Winamp 5+**
 
@@ -71,6 +78,7 @@ vis_tocspectrum/
 ├── scene.shared.pas       // Shared materials, lighting, and world-space constants
 ├── scene.fft.pas          // Spectrum-specific geometry generation and FFT processing
 ├── scene.waveform.pas     // Time-domain waveform surface deformation and ring-buffer history
+├── simd.pas               // 
 ├── shaders.gl.pas         // GLSL infrastructure and uniform management
 ├── textures.gl.pas        // Asset pipeline for procedural and bitmap textures
 ├── vectors.pas            // SIMD-optimized math: AVX/FMA3 matrix and vector logic
