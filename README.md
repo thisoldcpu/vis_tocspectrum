@@ -14,7 +14,7 @@ This project aims to bring a high-quality, GPU-accelerated spectrum analyzer to 
 
 ## Features
 
-- OpenGL-based rendering (fixed-function, compatibility profile, additional renderers being ported)
+- OpenGL-based rendering (GLSL, fixed-function, compatibility profile, additional renderers being ported)
 - Real-time spectrum visualization
 - No dependencies
 - Designed for correctness, clarity, and longevity
@@ -46,15 +46,6 @@ If you are looking for shader-heavy, modern-core OpenGL effects, this is **not**
 
 ---
 
-
-
-
-
-
-
-
-
-
 ## Build Requirements
 
 - **Delphi 12.x** (Win32)
@@ -70,13 +61,20 @@ No external libraries are required.
 
 ```text
 vis_tocspectrum/
-├── vis_tocspectrum.dpr   // Plugin entry point
-├── vis.pas               // Winamp vis.h port
-├── window.gl.pas         // OpenGL window + WGL setup
-├── render.gl.pas         // All rendering logic
-├── font.gl.pas           // Bitmap/vector font handling
-├── form.config.pas       // Configuration dialog
-└── resources (.res)
+├── vis_tocspectrum.dpr    // Plugin entry point and Winamp DLL exports
+├── vis.pas                // Winamp vis.h port; handles the engine heartbeat and audio feed
+├── defines.pas            // Core constants, bitfield-based CPUID rifling, and hardware flags
+├── font.gl.pas            // Bitmap/vector font handling for on-screen data
+├── form.config.pas        // Plugin configuration logic and property persistence
+├── models.obj.pas         // Wavefront .OBJ parser and loader with texture
+├── render.gl.pas          // Master OpenGL pipeline and frame orchestration
+├── scene.shared.pas       // Shared materials, lighting, and world-space constants
+├── scene.fft.pas          // Spectrum-specific geometry generation and FFT processing
+├── scene.waveform.pas     // Time-domain waveform surface deformation and ring-buffer history
+├── shaders.gl.pas         // GLSL infrastructure and uniform management
+├── textures.gl.pas        // Asset pipeline for procedural and bitmap textures
+├── vectors.pas            // SIMD-optimized math: AVX/FMA3 matrix and vector logic
+└── window.gl.pas          // Win32 OpenGL context (WGL) and message loop handling
 ```
 
 ---
